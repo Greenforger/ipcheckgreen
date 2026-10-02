@@ -2,12 +2,13 @@
 
 Herramienta para analizar la reputación de una IP usando múltiples fuentes sin API key.
 
-## Características
+## Instalación
 
-- Ubicación geográfica (país, ciudad, ISP, ASN)
-- Detección de proxy, hosting, Tor
-- Reputación desde noc.org, ipaudit.dev y reportedip.de
-- Veredicto final con colores
+```bash
+git clone https://github.com/Greenforger/ipcheckgreen.git
+cd ipcheckgreen
+pip install requests
+```
 
 ## Uso
 
@@ -20,6 +21,14 @@ python3 ipcheck.py <IP>
 ```bash
 python3 ipcheck.py 8.8.8.8
 ```
+
+## Qué muestra
+
+- Ubicación geográfica (país, ciudad, ISP, ASN)
+- Detección de proxy, hosting, Tor, móvil
+- Reputación desde 3 fuentes independientes
+- Score de abuso y reportes
+- Veredicto final con colores
 
 ## Fuentes
 
